@@ -1,10 +1,9 @@
-const request = require('supertest');
-const app = request('./../index.js');
+const {handler} = require('../index');
 
-describe('GET /', () => {
+describe('Lambda Function', () => {
     it('should return 200', async () => {
-        const res = await app.get('/');
+        const res = await handler();
         expect(res.status).toBe(200);
-        expect(res.text).toBe('Hello Cruel World')
+        expect(res.body).toBe('Hello Cruel World');
     });
 });

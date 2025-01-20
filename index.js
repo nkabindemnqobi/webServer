@@ -1,7 +1,8 @@
-export const handler = async () => {
+const handler = async () => {
     const response = {
-        statusCode: 200,
+        status: 200,
         body: "Hello Cruel World"
     };
     return response;
 };
+module.exports = {handler};
