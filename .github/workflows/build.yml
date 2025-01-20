@@ -35,6 +35,7 @@ jobs:
           path: my-node-api.zip
 
   deploy:
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
