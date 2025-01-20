@@ -29,7 +29,7 @@ jobs:
           zip -r my-node-api.zip ./
 
       - name: Upload Artifact to GitHub
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: my-node-api-zip
           path: my-node-api.zip
@@ -51,7 +51,7 @@ jobs:
           aws-region: ${{secrets.AWS_REGION}}
 
       - name: Download Build Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: my-node-api-zip
           path: ./build-artifact
