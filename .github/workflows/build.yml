@@ -58,6 +58,6 @@ jobs:
 
       - name: Deploy to AWS Lambda
         run: |
-          aws lambda update-function-code \
+          aws lambda mnqobiNkabindeApi \
             --function-name my-node-api-function \
             --zip-file fileb://./build-artifact/my-node-api.zip
