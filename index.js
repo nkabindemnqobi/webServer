@@ -1,11 +1,7 @@
-const express = require('express');
-const app = express();
-const port = 3000;
-
-app.get('/', (req, res) => {
-    res.send("Hello Cruel World");
-});
-
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+export const handler = async () => {
+    const response = {
+        statusCode: 200,
+        body: "Hello Cruel World"
+    };
+    return response;
+};
